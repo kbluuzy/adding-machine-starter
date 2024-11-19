@@ -27,3 +27,21 @@ function meow() {
     meowSound.play();
 
 }
+
+let darkModeSetting = false;
+
+function darkMode() {
+    if(darkModeSetting == false) {
+        darkModeSetting = true; 
+        document.body.style.backgroundColor = "black"
+        document.body.style.color = "white"
+        document.getElementById("dark-mode").innerHTML = "Deactivate Dark Mode";
+    }
+
+    else {
+        darkModeSetting = false
+        document.body.style.backgroundColor = "white"
+        document.body.style.color = "black"
+        document.getElementById("dark-mode").innerHTML = "Activate Dark Mode"
+    }
+}
